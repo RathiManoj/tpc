@@ -44,6 +44,25 @@ public class Student {
 	@ElementCollection
 	private List<Education> education;
 
+	public Student() {
+
+	}
+
+	public Student(boolean active, String enrollNo, String name, String gender, String email, String mobile,
+			Course course, long startYear, long endYear, Set<Job> jobs) {
+		super();
+		this.active = active;
+		this.enrollNo = enrollNo;
+		this.name = name;
+		this.gender = gender;
+		this.email = email;
+		this.mobile = mobile;
+		this.course = course;
+		this.startYear = startYear;
+		this.endYear = endYear;
+		this.jobs = jobs;
+	}
+
 	public String getId() {
 		return id;
 	}

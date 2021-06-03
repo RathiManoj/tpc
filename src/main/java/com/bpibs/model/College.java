@@ -25,6 +25,26 @@ public class College {
 	private String adminPhone;
 	private String adminEmail;
 
+	public College() {
+
+	}
+
+	public College(String name, String address, String city, String state, String pin, String country, String website,
+			String adminName, String adminJob, String adminPhone, String adminEmail) {
+		super();
+		this.name = name;
+		this.address = address;
+		this.city = city;
+		this.state = state;
+		this.pin = pin;
+		this.country = country;
+		this.website = website;
+		this.adminName = adminName;
+		this.adminJob = adminJob;
+		this.adminPhone = adminPhone;
+		this.adminEmail = adminEmail;
+	}
+
 	public String getId() {
 		return id;
 	}

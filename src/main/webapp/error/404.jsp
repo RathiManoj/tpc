@@ -3,8 +3,8 @@
 <div class="container text-center" style="font-size: 1.5em">
 
 	<div>
-		<h1>403</h1>
-		<p>Not Authorized</p>
+		<h1>404</h1>
+		<p>Page Not Found</p>
 	</div>
 
 </div>

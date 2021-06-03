@@ -32,6 +32,23 @@ public class Job {
 	@ManyToMany(mappedBy = "jobs", fetch = FetchType.EAGER)
 	private Set<Student> students;
 
+	public Job() {
+
+	}
+
+	public Job(String companyName, String jobType, String jobTitle, List<Course> courses, String website,
+			String jobLocation, LocalDate appliedBy, boolean active) {
+		super();
+		this.companyName = companyName;
+		this.jobType = jobType;
+		this.jobTitle = jobTitle;
+		this.courses = courses;
+		this.website = website;
+		this.jobLocation = jobLocation;
+		this.appliedBy = appliedBy;
+		this.active = active;
+	}
+
 	public String getId() {
 		return id;
 	}

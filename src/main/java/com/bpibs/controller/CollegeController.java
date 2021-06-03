@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -44,6 +45,7 @@ public class CollegeController {
 		return "college-details";
 	}
 
+	@PreAuthorize("hasAuthority('ADMIN')")
 	@GetMapping("/college-preferences")
 	public String updateCollegePrefrencesFrom(Model model) {
 		List<College> collegeList = collegeRepo.findAll();
@@ -53,6 +55,7 @@ public class CollegeController {
 		return "college/college-preferences";
 	}
 
+	@PreAuthorize("hasAuthority('ADMIN')")
 	@PostMapping("/college-preferences")
 	public String updateCollegePrefrences(@ModelAttribute College college) {
 		collegeRepo.save(college);

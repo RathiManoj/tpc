@@ -28,6 +28,19 @@ public class User {
 	@ManyToMany(fetch = FetchType.EAGER)
 	private Set<Role> roles;
 
+	public User() {
+
+	}
+
+	public User(String name, String username, String password, boolean active, Set<Role> roles) {
+		super();
+		this.name = name;
+		this.username = username;
+		this.password = password;
+		this.active = active;
+		this.roles = roles;
+	}
+
 	public String getId() {
 		return id;
 	}

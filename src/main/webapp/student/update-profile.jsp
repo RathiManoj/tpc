@@ -13,7 +13,7 @@
 				</c:when>
 				<c:otherwise>
 					<img class="img-thumbnail" alt="user-image"
-						src="/user-data/image.png">
+						src="/image.png">
 				</c:otherwise>
 			</c:choose>
 		</div>

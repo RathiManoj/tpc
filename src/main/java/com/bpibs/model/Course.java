@@ -17,6 +17,17 @@ public class Course {
 	private int duration;
 	private int credits;
 
+	public Course() {
+
+	}
+
+	public Course(String name, int duration, int credits) {
+		super();
+		this.name = name;
+		this.duration = duration;
+		this.credits = credits;
+	}
+
 	public String getName() {
 		return name;
 	}
